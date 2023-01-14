@@ -2,3 +2,6 @@ git init : initialize a folder to get it ready to be linked into a new repositor
 git remote add origin `https` 
 make some changes 
 
+git add .
+git commit -m "message in this commit"
+
