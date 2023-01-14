@@ -4,4 +4,12 @@ make some changes
 
 git add .
 git commit -m "message in this commit"
+git push origin master
+
+
+git remote set-url origin git@github.com:mahery76/J2ME.git
+
+ssh-keygen -t rsa -b 4096 -C "randrianjafymahery@gmail.com"
+
+
 
