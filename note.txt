@@ -1,0 +1,2 @@
+git init : initialize a folder to get it ready to be linked into a new repository
+git remote add origin `https` 
