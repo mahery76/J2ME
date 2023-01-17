@@ -16,9 +16,9 @@ function romtoara(roman) {
     for (let i = 0; i < roman.length; i++) {
         console.log(roman[i])
         let identique = numerotation.filter(function(objet){
-            return Object.values(objet) == roman[i]
+            return Object.values(objet) === roman[i]
         })
-        // let identique = numerotation.filter(object => Object.values(objet) == roman[i])
+        // let identique = numerotation.filter(object => Object.values(objet) === roman[i])
         let keys = identique.map(function(object){
             return Object.keys(object)
         })
@@ -31,7 +31,7 @@ function romtoara(roman) {
 
     for (let i = 0; i < tab.length; i++) {
         console.log("ito ilay", i)
-        if(i == tab.length - 1){
+        if(i === tab.length - 1){
             arabic = arabic + tab[i]
             break;
         }
