@@ -10,7 +10,7 @@ function Chiffre() {
   const [secondValue, setSecondValue] = useState("")
 
   function handleChange(event) {
-    if (event.target.value == "CA") {
+    if (event.target.value === "CA") {
       setSecondUnit("chiffre romain")
       setInputType("number")
     }
@@ -23,7 +23,7 @@ function Chiffre() {
   function handleClick(event) {
     event.preventDefault()
     console.log('mande ny boutton ')
-    if (secondUnit == "chiffre romain") {
+    if (secondUnit === "chiffre romain") {
       setSecondValue(arabicToRoman(inputRef.current.value))
     }
     else {

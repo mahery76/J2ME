@@ -7,7 +7,7 @@ function Temperature() {
     const [secondValue, setSecondValue] = useState(0)
 
     function handleChange(event) {
-        if (event.target.value == "DC") {
+        if (event.target.value === "DC") {
             setSecondUnit("Degré Fahrenheit")
         }
         else {
@@ -15,8 +15,9 @@ function Temperature() {
         }
     }
 
-    function handleClick(event){
-        if (secondUnit == "Degré Fahrenheit") {
+    function handleClick(event) {
+        event.preventDefault()
+        if (secondUnit === "Degré Fahrenheit") {
             setSecondValue((inputRef.current.value * 9 / 5) + 32)
         }
         else {
@@ -48,12 +49,11 @@ function Temperature() {
                     <div className="secondUnit">
                         {secondUnit}
                     </div>
-
                 </div>
 
             </div>
-            <div className="boutton"> 
-                <button onClick = {handleClick}>Convertir</button>
+            <div className="boutton">
+                <button onClick={handleClick}>Convertir</button>
             </div>
         </div>
     )
