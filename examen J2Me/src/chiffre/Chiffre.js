@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react'
-import { arabicToRoman, romanToArabic } from './convert'
+// import { arabicToRoman, romanToArabic } from './convert'
+import aratorom from './aratorom'
+import romtoara from './romtoara'
 
 function Chiffre() {
   const inputRef = useRef(null)
@@ -24,10 +26,10 @@ function Chiffre() {
     event.preventDefault()
     console.log('mande ny boutton ')
     if (secondUnit === "chiffre romain") {
-      setSecondValue(arabicToRoman(inputRef.current.value))
+      setSecondValue(aratorom(inputRef.current.value))
     }
     else {
-      setSecondValue(romanToArabic(inputRef.current.value))
+      setSecondValue(romtoara(inputRef.current.value))
     }
   }
   return (
