@@ -37,7 +37,10 @@ function Chiffre() {
       <br />
       <br />
       <br />
-      <div className="titre"></div>
+      <div className="titre">
+        <h3>Nombres</h3>
+
+      </div>
       <div className="valeurs">
 
         {/* premier valeur  */}

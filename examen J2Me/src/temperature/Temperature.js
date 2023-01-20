@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import "../styles/temp.css"
 
 function Temperature() {
     const inputRef = useRef(null)
@@ -28,9 +29,10 @@ function Temperature() {
     return (
         <div className="fen temperature">
             <div className="titre">
+                <h3>Températures</h3>
             </div>
 
-            <div className="valeurs">
+            <div className="temp__valeurs">
                 {/* premier valeur  */}
                 <div className="valeur">
                     <div className="values"> <input type="number" ref={inputRef} /> </div>
