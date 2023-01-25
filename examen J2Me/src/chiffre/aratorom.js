@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-export function araTorom(nombre) {
-=======
-let arabic = 4
-function araTorom(nombre) {
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
+function aratorom(arabic) {
     let roman = []
     const numerotation = [
         { 1: "I" },
@@ -23,16 +18,13 @@ function araTorom(nombre) {
     // for (let i of numerotation) console.log(parseInt(Object.keys(i)) + 1)    
     for (let i = numerotation.length - 1; i >= 0; i--) {
         // console.log(parseInt(Object.keys(numerotation[i])))
-        while (nombre >= parseInt(Object.keys(numerotation[i]))) {
-            nombre = nombre - parseInt(Object.keys(numerotation[i]))
+        while (arabic >= parseInt(Object.keys(numerotation[i]))) {
+            arabic = arabic - parseInt(Object.keys(numerotation[i]))
             roman.push(Object.values(numerotation[i]))
         }
     }
     roman = roman.join('')
-    console.log(roman)
+    return roman
 }
-<<<<<<< HEAD
-=======
-araTorom(arabic)
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
 
+export default aratorom;

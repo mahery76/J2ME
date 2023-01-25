@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-export function romtoara(roman) {
-=======
-let roman = "MCXCLVI"
 function romtoara(roman) {
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
     let tab = []
     let arabic = 0;
     const numerotation = [
@@ -21,9 +16,9 @@ function romtoara(roman) {
     for (let i = 0; i < roman.length; i++) {
         console.log(roman[i])
         let identique = numerotation.filter(function(objet){
-            return Object.values(objet) == roman[i]
+            return Object.values(objet) === roman[i]
         })
-        // let identique = numerotation.filter(object => Object.values(objet) == roman[i])
+        // let identique = numerotation.filter(object => Object.values(objet) === roman[i])
         let keys = identique.map(function(object){
             return Object.keys(object)
         })
@@ -36,7 +31,7 @@ function romtoara(roman) {
 
     for (let i = 0; i < tab.length; i++) {
         console.log("ito ilay", i)
-        if(i == tab.length - 1){
+        if(i === tab.length - 1){
             arabic = arabic + tab[i]
             break;
         }
@@ -49,7 +44,4 @@ function romtoara(roman) {
     }
     return arabic
 }
-<<<<<<< HEAD
-=======
-console.log(romtoara(roman))
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
+export default romtoara;
