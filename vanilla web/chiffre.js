@@ -1,5 +1,3 @@
-import { romtoara } from "./romtoara.js";
-import { aratorom } from "./aratorom.js";
 
 function chiffre_convertir() {
   let unit = document.querySelector("#chiffre_firstUnit").value;

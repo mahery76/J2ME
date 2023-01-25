@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-export function romtoara(roman) {
-=======
-let roman = "MCXCLVI"
 function romtoara(roman) {
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
     let tab = []
     let arabic = 0;
     const numerotation = [
@@ -49,7 +44,4 @@ function romtoara(roman) {
     }
     return arabic
 }
-<<<<<<< HEAD
-=======
-console.log(romtoara(roman))
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
+window.romtoara = romtoara; 

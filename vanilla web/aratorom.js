@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-export function araTorom(nombre) {
-=======
-let arabic = 4
-function araTorom(nombre) {
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
+function aratorom(nombre) {
     let roman = []
     const numerotation = [
         { 1: "I" },
@@ -29,10 +24,7 @@ function araTorom(nombre) {
         }
     }
     roman = roman.join('')
-    console.log(roman)
+    return roman
 }
-<<<<<<< HEAD
-=======
-araTorom(arabic)
->>>>>>> cb1a7534b296ea91a581d014f59705edf22f9050
+window.aratorom = aratorom;
 
