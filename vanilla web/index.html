@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="fen temperature">
+      <div class="titre"></div>
+      <div class="valeurs">
+        <!-- premier valeur  -->
+        <div class="value_unit">
+          <div class="value"><input type="number" id="firstValue" /></div>
+          <select id="firstUnit" onChange="handleChange()">
+            <option value="DC" selected>Degré Celsius</option>
+            <option value="DF">Degré Fahrenheit</option>
+          </select>
+        </div>
+        <!-- signe egale  -->
+        <div class="egale">=</div>
+
+        <!-- deuxieme valeur  -->
+        <div class="value_unit">
+          <div class="value" id="secondValue"></div>
+          <div class="secondUnit" id="secondUnit">Degré Fahrenheit</div>
+        </div>
+      </div>
+      <div class="button">
+        <button onclick="convertir()">Convertir</button>
+      </div>
+      <div class="button">
+        <button onclick="Effacer()">Effacer tous</button>
+      </div>
+    </div>
+    <script src="temperature.js"></script>
+
+    <br><br><br>
+    <div class="fen chiffre">
+      <div class="titre"></div>
+      <div class="valeurs">
+        <!-- premier valeur -->
+        <div class="valeur">
+          <div class="valeur">
+            <div class="values"><input type="number" id="chiffre_firstValue" /></div>
+            <select id="chiffre_firstUnit" onChange="chiffre_handleChange()">
+              <option value="arabe" selected>Arabe</option>
+              <option value="romain">Romain</option>
+            </select>
+          </div>
+        </div>
+        <!-- signe egale -->
+        <div class="egale">=</div>
+        <!-- deuxieme valeur -->
+        <div class="valeur">
+            <div class="value" id="chiffre_secondValue"></div>
+            <div class="secondUnit" id="chiffre_secondUnit">Romain</div>  
+        </div>
+      </div>
+
+      <div class="button">
+        <button onclick="chiffre_convertir()">Convertir</button>
+      </div>
+      <div class="button">
+        <button onclick="chiffre_Effacer()">Effacer tous</button>
+      </div>
+    </div>
+
+    <script src="chiffre.js"></script>
+  </body>
+</html>
